@@ -31,3 +31,18 @@ graph.c:40:23: error: implicit declaration of function ‘stdrup’; did you mea
       |                       strdup
 graph.c:40:23: error: initialization of ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
 06158c9
+Fri Oct  2 01:19:28 AM UTC 2026: 
+ graph.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘addNode’:
+graph.c:38:19: error: ‘g_’ undeclared (first use in this function); did you mean ‘g’?
+   38 |     if(map_search(g_>adjacencyMap, (void*)label)!=NULL)return;
+      |                   ^~
+      |                   g
+graph.c:38:19: note: each undeclared identifier is reported only once for each function it appears in
+graph.c:38:22: error: ‘adjacencyMap’ undeclared (first use in this function)
+   38 |     if(map_search(g_>adjacencyMap, (void*)label)!=NULL)return;
+      |                      ^~~~~~~~~~~~
+74de1f0
