@@ -51,3 +51,14 @@ Fri Oct  2 01:19:51 AM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ec95a05
+Fri Oct  2 01:30:22 AM UTC 2026: 
+ graph.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘addEdge’:
+graph.c:52:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   52 |     if(aux=NULL) return;
+      |        ^~~
+cc1: all warnings being treated as errors
+0a3d0ba
