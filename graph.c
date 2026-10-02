@@ -35,7 +35,7 @@ Graph* createGraph() {
 
 void addNode(Graph* g, const char* label) {
     if (!g || !label) return;
-    if(map_search(g_>adjacencyMap, (void*)label)!=NULL)return;
+    if(map_search(g->adjacencyMap, (void*)label)!=NULL)return;
     List *edges=list_create();
     char* copia_label=strdup(label);
     if(copia_label == NULL) return;
